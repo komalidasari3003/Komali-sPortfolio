@@ -1,13 +1,13 @@
-import React, { useRef, useEffect, useState } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import heroVideo from '../assets/hero video/yusuf-hero.mp4';
-import { heroContent, personalInfo, socialLinks } from '../data/portfolioData';
+import heroVideo from '../assets/hero video/komali-hero.mp4';
+import { heroContent, socialLinks } from '../data/portfolioData';
 
 const Hero = () => {
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [isMuted, setIsMuted] = useState(false);
+  const [isMuted] = useState(false);
 
   useEffect(() => {
     AOS.init({
